@@ -1,0 +1,33 @@
+<div class="container">
+
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">{{menu}}</a></li>
+            <li class="pull-right">
+                <label>Sort  :</label>
+                <select ng-model="sortColumn" class="pull-right">
+                    <option value="">Select</option>
+                    <option value="name">Name</option>
+                    <option value="price">Price Low to High</option>
+                    <option value="-price">Price High to Low</option>
+                </select>
+            </li>
+        </ol>
+    </div>
+
+    <div class="row">
+        <div >
+            <div class="col-sm-4 col-md-3" ng-repeat="objProduct in objProducts |orderBy:sortColumn">
+                <div class="thumbnail text-center">
+                    <img src="{{objProduct.imgurl}}" alt="{{objProduct.name}}">
+                    <div class="caption">
+                        <h4>{{objProduct.name}}</h4>
+                        <p>{{objProduct.price}} AED</p>
+                        <p><a href="#" class="btn btn-default" ng-click="addToCart(objProduct)" role="button">Add to Cart</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

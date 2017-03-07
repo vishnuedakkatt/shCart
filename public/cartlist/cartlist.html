@@ -1,0 +1,54 @@
+<div class="container" ng-controller="CartlistCtrl">
+    <div class="jumbotron" ng-if="arrCartData.length !== 0">
+    <table id="cart" class="table table-hover table-condensed"  ng-if="arrCartData.length !== 0">
+        <thead>
+        <tr>
+            <th style="width:50%">Product</th>
+            <th style="width:10%">Price</th>
+            <th style="width:8%">Quantity</th>
+            <th style="width:22%" class="text-center">Subtotal</th>
+            <th style="width:10%"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--Iterating the Cart items-->
+        <tr ng-repeat="objCartList in arrCartData">
+            <td data-th="Product">
+                <div class="row">
+                    <div class="col-sm-2 hidden-xs"><img src="{{objCartList.imgurl}}" alt="{{objCartList.name}}" class="img-responsive"/></div>
+                    <div class="col-sm-10">
+                        <h4 class="nomargin">{{objCartList.name}}</h4>
+                        <span>{{objCartList.brand}}-{{objCartList.model}}</span>
+                        <p></p>
+                    </div>
+                </div>
+            </td>
+            <td data-th="Price">{{objCartList.price}} AED</td>
+            <td data-th="Quantity">
+                <input type="number" min="1" ng-model="objCartList.count" class="form-control text-center" value="1">
+            </td>
+            <td data-th="Subtotal" class="text-center">{{objCartList.price * objCartList.count}} AED</td>
+            <td class="actions" data-th="">
+                <button class="btn btn-danger btn-sm pull-right" ng-click="removeItem(objCartList.sku)"><i class="fa fa-trash-o"></i></button>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr class="visible-xs">
+            <td class="text-center"><strong>Total {{getTotal()}}</strong></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td class="hidden-xs text-center"><strong>Total : {{getTotal()}} AED<strong></td>
+            <td></td>
+        </tr>
+        </tfoot>
+    </table>
+    </div>
+
+    <div class="col-md-offset-2 empty-div" ng-if="arrCartData.length == 0">
+        <img  src="/public/images/empty.jpg" alt="Empty Cart class="img-responsive"/>
+        <a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a>
+    </div>
+</div>

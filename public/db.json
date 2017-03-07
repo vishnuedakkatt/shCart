@@ -1,0 +1,141 @@
+[
+  {
+    "mobile":
+    [ {
+        "sku"   :"SAM00000001",
+        "name"  :"Samsung Galaxy",
+        "brand" :"Samsung",
+        "model" :"Note-1",
+        "price" :"1500",
+        "imgurl":"/public/images/galaxy.png"
+      },
+      {
+        "sku"   :"SAM00000002",
+        "name"  :"Samsung Galaxy",
+        "brand" :"Samsung",
+        "model" :"Note-2",
+        "price" :"2500",
+        "imgurl":"/public/images/samsung2.png"
+      },
+      {
+        "sku"   :"IOS00000001",
+        "name"  :"Apple Iphone",
+        "brand" :"Apple",
+        "model" :"I-7",
+        "price" :"4500",
+        "imgurl":"/public/images/iphone.png"
+      },
+      {
+        "sku"   :"SAM00000003",
+        "name"  :"Samsung Galaxy",
+        "brand" :"Samsung",
+        "model" :"Note-1",
+        "price" :"1500",
+        "imgurl":"/public/images/galaxy.png"
+      },
+      {
+        "sku"   :"SAM00000004",
+        "name"  :"Samsung Galaxy",
+        "brand" :"Samsung",
+        "model" :"Note-2",
+        "price" :"2500",
+        "imgurl":"/public/images/samsung2.png"
+      },
+      {
+        "sku"   :"IOS00000002",
+        "name"  :"Apple Iphone",
+        "brand" :"Apple",
+        "model" :"I-7",
+        "price" :"4500",
+        "imgurl":"/public/images/iphone.png"
+      },
+      {
+        "sku"   :"IOS00000003",
+        "name"  :"Apple Iphone",
+        "brand" :"Apple",
+        "model" :"I-7",
+        "price" :"4500",
+        "imgurl":"/public/images/iphone.png"
+      },
+      {
+        "sku"   :"IOS00000004",
+        "name"  :"Apple Iphone",
+        "brand" :"Apple",
+        "model" :"I-7",
+        "price" :"5000",
+        "imgurl":"/public/images/iphone.png"
+      }
+
+    ]},
+
+
+
+  {
+    "computer":
+    [{
+      "sku"   :"SAMCOM00001",
+      "name"  :"Samsung Laptop-1",
+      "brand" :"Samsung",
+      "model" :"CoolPad-1",
+      "price" :"2500",
+      "imgurl":"/public/images/samsung1.jpg"
+    },
+      {
+        "sku"   :"SAMCOM00002",
+        "name"  :"Samsung Laptop-2 ",
+        "brand" :"Samsung",
+        "model" :"CoolPad-2",
+        "price" :"3500",
+        "imgurl":"/public/images/samsung2.jpg"
+      },
+      {
+        "sku"   :"IOSMAC00001",
+        "name"  :"Apple MacBook- 1",
+        "brand" :"Apple",
+        "model" :"Mac-1",
+        "price" :"6500",
+        "imgurl":"/public/images/mac3.jpg"
+      },
+      {
+        "sku"   :"SAMCOM00003",
+        "name"  :"Samsung Lap-3",
+        "brand" :"Samsung",
+        "model" :"CoolPad-3",
+        "price" :"3500",
+        "imgurl":"/public/images/samsung1.jpg"
+      },
+      {
+        "sku"   :"SAMCOM00004",
+        "name"  :"Samsung Lap-4",
+        "brand" :"Samsung",
+        "model" :"CoolPad-4",
+        "price" :"2500",
+        "imgurl":"/public/images/samsung1.jpg"
+      },
+      {
+        "sku"   :"IOSMAC00002",
+        "name"  :"Apple MacBook-2",
+        "brand" :"Apple",
+        "model" :"Mac-2",
+        "price" :"8500",
+        "imgurl":"/public/images/mac3.jpg"
+      },
+      {
+        "sku"   :"IOSMAC00003",
+        "name"  :"Apple MacBook-3",
+        "brand" :"Apple",
+        "model" :"Mac-3",
+        "price" :"4500",
+        "imgurl":"/public/images/mac2.jpg"
+      },
+      {
+        "sku"   :"IOSMAC00004",
+        "name"  :"Apple MacBook-4",
+        "brand" :"Apple",
+        "model" :"Mac-4",
+        "price" :"5000",
+        "imgurl":"/public/images/mac3.jpg"
+      }
+
+    ]}
+]
